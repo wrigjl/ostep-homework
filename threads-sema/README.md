@@ -21,4 +21,5 @@ prompt> ./foo
 
 (maybe with some optional arguments)
 
-
+There are also python versions of (most) of the exercises that have
+builtin tests.
