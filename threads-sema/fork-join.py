@@ -54,7 +54,7 @@ def child_thread(testcase, q):
     if testcase == 4:
         time.sleep(1)
 
-    print("thread B end")
+    print("child end")
     q.put(("child", "end"))
 
     # use semaphore here
