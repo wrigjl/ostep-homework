@@ -10,7 +10,7 @@
 // when attempting to acquire this mutex you build?
 //
 
-typedef __ns_mutex_t {
+typedef struct __ns_mutex_t {
 } ns_mutex_t;
 
 void ns_mutex_init(ns_mutex_t *m) {
