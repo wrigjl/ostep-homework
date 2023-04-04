@@ -1,3 +1,7 @@
 *~
 barrier
+fork-join
+mutex-nostarve
+reader-writer
+reader-writer-nostarve
 rendezvous
