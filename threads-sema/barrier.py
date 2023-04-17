@@ -38,7 +38,7 @@ def thread_N(n, testcase, q, expecting):
         time.sleep(1)
 
     print(f"thread {n} start")
-    q.put((n, "start", arrived, n, expecting))
+    q.put((n, "start", expecting))
 
     if testcase == 2:
         time.sleep(1)
@@ -49,7 +49,7 @@ def thread_N(n, testcase, q, expecting):
         time.sleep(1)
 
     print(f"thread {n} end")
-    q.put((n, "end", arrived, n, expecting))
+    q.put((n, "end", expecting))
 
     if testcase == 4:
         time.sleep(1)
