@@ -5,3 +5,4 @@ mutex-nostarve
 reader-writer
 reader-writer-nostarve
 rendezvous
+barrier-cpp

@@ -1,7 +1,8 @@
-ALL=barrier rendezvous fork-join mutex-nostarve reader-writer reader-writer-nostarve
+ALL=barrier rendezvous fork-join mutex-nostarve reader-writer reader-writer-nostarve barrier-cpp
 
 
 CFLAGS=-g -pthread -Wall -O
+CXXFLAGS=-g -O -std=c++20
 
 all: $(ALL)
 
@@ -22,6 +23,9 @@ reader-writer: reader-writer.c common_threads.h
 
 reader-writer-nostarve: reader-writer-nostarve.c common_threads.h
 	$(CC) -o $@ $< $(CFLAGS)
+
+barrier-cpp: barrier.cc
+	$(CXX) -o $@ $< $(CXXFLAGS)
 
 clean:
 	rm -f $(ALL)
